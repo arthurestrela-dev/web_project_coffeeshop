@@ -1,36 +1,148 @@
 <!doctype html>
-<html lang="pt"></html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Café Triple Peaks - O melhor café da cidade!"
-  />
-  <meta name="author" content="Arthur Estrela" />
-  <meta name="keywords" content="Café, Café Triple Peaks, Café da cidade" />
-  <title>Café Triple Peaks</title>
-  <link rel="icon" href="./favicon.ico" />
-  <link rel="stylesheet" href="./vendor/normalize.css" />
-  <link rel="stylesheet" href="./pages/index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
-  />
-</head>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Café Triple Peaks - O melhor café da cidade!"
+    />
+    <meta name="author" content="Arthur Estrela" />
+    <meta name="keywords" content="Café, Café Triple Peaks, Café da cidade" />
+    <title>Café Triple Peaks</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <div class="page">
-    Testando...
-    <header class="header"></header>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo do Café Triple Peaks"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#recipes" class="nav__link">Receitas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reservation" class="nav__link">Reservar uma mesa</a>
+            </li>
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Contatos</a>
+            </li>
+          </ul>
+        </nav>
 
-    <main class="content">
-      <section class="recipes"></section>
-      <section class="reservation"></section>
-    </main>
+        <h1 class="header__title">
+          <span class="header__space-accent">Café especial</span>
+          <span>na biblioteca Triple Peaks</span>
+        </h1>
 
-    <footer class="footer"></footer>
-  </div>
-</body>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Copo de café"
+          class="header__image"
+        />
+
+        <div class="header__footer">
+          <div class="header__schedules">
+            <p class="header__paragraph">Horários:</p>
+
+            <p class="header__paragraph">Segunda à Sexta (10:00 - 19:00)</p>
+
+            <p class="header__paragraph">Sábado e Domingo (11:00 - 18:00)</p>
+          </div>
+
+          <div class="header__address">
+            <p class="header__paragraph">
+              200 Success Avenue, a cidade de Triple Peaks
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+          </p>
+
+          <div class="recipes__videos">
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=qI7IJoldhkrkqVUQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+
+              <div class="recipes__video-caption">
+                <p class="recipes__video-title">Receita Aeropress</p>
+                <p class="recipes__video-duration">~5 min</p>
+              </div>
+            </div>
+
+            <div class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=7n-c5CfyPCpO914u"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+
+              <div class="recipes__video-caption">
+                <p class="recipes__video-title">Receita de Prensa Francesa</p>
+                <p class="recipes__video-duration">~15 min</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation"></section>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
